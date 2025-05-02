@@ -1,0 +1,21 @@
+﻿<Window x:Class="TestForWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestForWPF"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1200">
+    <Grid HorizontalAlignment="Left" Width="1200" Height="700" VerticalAlignment="Top">
+        <TextBox x:Name="dimension" HorizontalAlignment="Left" Height="41" Margin="103,42,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="mutationChance" HorizontalAlignment="Left" Height="41" Margin="103,107,0,0" TextWrapping="Wrap" Text="0.15" VerticalAlignment="Top" Width="104"/>
+        <Button Content="Задать матрицу" HorizontalAlignment="Left" Height="39" Margin="103,195,0,0" VerticalAlignment="Top" Width="104" Click="Button_Click"/>
+        <Grid Name="MaxValueGrid" HorizontalAlignment="Left" Margin="682,174,0,0" VerticalAlignment="Top" Width="387" Height="172" />
+        <Button Content="Запуск программы" HorizontalAlignment="Left" Height="39" Margin="103,270,0,0" VerticalAlignment="Top" Width="104" Click="Button_Click_1"/>
+        <Button Content="Остановка" HorizontalAlignment="Left" Height="39" Margin="103,336,0,0" VerticalAlignment="Top" Width="104" Click="Button_Click_2"/>
+        <ListBox x:Name="Answer" HorizontalAlignment="Left" Height="314" Margin="269,42,0,0" VerticalAlignment="Top" Width="331"/>
+        <TextBlock HorizontalAlignment="Left" Margin="94,26,0,0" TextWrapping="Wrap" Text="Размерность матрицы" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="96,91,0,0" TextWrapping="Wrap" Text="Вероятность мутации" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
